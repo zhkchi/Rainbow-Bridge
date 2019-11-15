@@ -1,0 +1,8 @@
+2019-11-15 13:20:08.674 [Thread-18] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-11-15 13:20:08.690 [Thread-18] INFO  org.springframework.scheduling.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2019-11-15 13:20:08.691 [Thread-18] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-11-15 13:20:08.692 [Thread-18] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-11-15 13:20:08.693 [Thread-18] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-11-15 13:20:08.696 [Thread-18] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 13:20:08.699 [Thread-18] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-3} closing ...
+2019-11-15 13:20:08.701 [Thread-18] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-3} closed

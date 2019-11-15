@@ -1,0 +1,8 @@
+2019-11-15 13:20:08.674  INFO 29925 --- [Thread-18] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-11-15 13:20:08.690  INFO 29925 --- [Thread-18] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2019-11-15 13:20:08.691  INFO 29925 --- [Thread-18] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-11-15 13:20:08.692  INFO 29925 --- [Thread-18] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-11-15 13:20:08.693  INFO 29925 --- [Thread-18] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-11-15 13:20:08.696  INFO 29925 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 13:20:08.699  INFO 29925 --- [Thread-18] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closing ...
+2019-11-15 13:20:08.701  INFO 29925 --- [Thread-18] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
