@@ -7,11 +7,7 @@
     <artifactId>rainbow-bridge</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1</version>
-    <modules>
-        <module>rainbow-bridge-common</module>
-        <module>rainbow-bridge-gateway</module>
-        <module>rainbow-bridge-register</module>
-    </modules>
+
     <name>rainbow-bridge</name>
     <description>彩虹桥</description>
 
@@ -39,7 +35,16 @@
         <security.oauth.version>2.3.6.RELEASE</security.oauth.version>
         <activiti.version>5.22.0</activiti.version>
         <swagger.core.version>1.5.22</swagger.core.version>
+        <docker.url>http://127.0.0.1:4243</docker.url>
+        <docker.plugin.version>0.4.12</docker.plugin.version>
+        <registry.url>127.0.0.1:5000</registry.url>
     </properties>
+
+    <modules>
+        <module>rainbow-bridge-common</module>
+        <module>rainbow-bridge-gateway</module>
+        <module>rainbow-bridge-register</module>
+    </modules>
 
     <dependencies>
         <!--配置文件处理器-->
@@ -99,6 +104,13 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.zhkchi</groupId>
+                <artifactId>rainbow-bridge-common-bom</artifactId>
+                <version>${project.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

@@ -12,11 +12,12 @@
     <artifactId>rainbow-bridge-common</artifactId>
     <packaging>pom</packaging>
 
-    <description>公共模块</description>
+    <description>公共父模块</description>
 
     <modules>
-        <module>rainbow-bridge-common-bow</module>
+        <module>rainbow-bridge-common-bom</module>
         <module>rainbow-bridge-common-core</module>
+        <module>rainbow-bridge-common-security</module>
     </modules>
 
 </project>
