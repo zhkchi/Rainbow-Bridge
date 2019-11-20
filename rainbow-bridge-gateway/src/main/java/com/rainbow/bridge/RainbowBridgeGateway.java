@@ -8,10 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date 2019/11/19
  */
 @SpringBootApplication
-public class RainbowBridgeGateWay {
+public class RainbowBridgeGateway {
 
     public static void main(String[] args) {
-        SpringApplication.run(RainbowBridgeGateWay.class, args);
+        SpringApplication.run(RainbowBridgeGateway.class, args);
     }
 
 }
