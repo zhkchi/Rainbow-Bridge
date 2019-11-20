@@ -8,6 +8,9 @@ spring:
     nacos:
       discovery:
         server-addr: 120.79.228.48:8848
+      config:
+        server-addr: 120.79.228.48:8848
+        file-extension: yml
     gateway:
       discovery:
         locator:
