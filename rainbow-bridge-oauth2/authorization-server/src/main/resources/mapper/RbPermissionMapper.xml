@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhkchi.mapper.RbPermissionMapper">
+  <resultMap id="BaseResultMap" type="com.zhkchi.domain.RbPermission">
+    <!--@mbg.generated-->
+    <!--@Table rb_permission-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="parent_id" jdbcType="BIGINT" property="parentId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="enname" jdbcType="VARCHAR" property="enname" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="created" jdbcType="TIMESTAMP" property="created" />
+    <result column="updated" jdbcType="TIMESTAMP" property="updated" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, parent_id, `name`, enname, url, description, created, updated
+  </sql>
+  <select id="getPermissionsByUserId" resultMap="BaseResultMap">
+    SELECT
+    p.*
+    FROM
+    rb_user AS u
+    LEFT JOIN rb_user_role AS ur
+    ON u.id = ur.user_id
+    LEFT JOIN rb_role AS r
+    ON r.id = ur.role_id
+    LEFT JOIN rb_role_permission AS rp
+    ON r.id = rp.role_id
+    LEFT JOIN rb_permission AS p
+    ON p.id = rp.permission_id
+    WHERE u.id = ${userId}
+  </select>
+</mapper>

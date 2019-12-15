@@ -1,8 +1,12 @@
 package com.zhkchi.controller;
+//import com.zhkchi.domain.AauthApprovals;
+//import com.zhkchi.mapper.UesrMapper;
+import com.zhkchi.AuthorizationSeverApplication;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import reactor.core.publisher.Mono;
+//import reactor.core.publisher.Mono;
 
 import java.security.Principal;
 
@@ -14,9 +18,4 @@ import java.security.Principal;
 @RequestMapping("/user")
 public class UserController {
 
-    @GetMapping("/getCurUser")
-    public Mono<Principal> getCurUser(Principal principal){
-
-        return Mono.justOrEmpty(principal);
-    }
 }
