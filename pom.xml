@@ -38,12 +38,15 @@
         <docker.url>http://127.0.0.1:4243</docker.url>
         <docker.plugin.version>0.4.12</docker.plugin.version>
         <registry.url>127.0.0.1:5000</registry.url>
+        <mybatis-plus-boot-starter.version>3.2.0</mybatis-plus-boot-starter.version>
+        <mybatis-plus-generator.version>3.0-RC3</mybatis-plus-generator.version>
     </properties>
 
     <modules>
         <module>rainbow-bridge-common</module>
         <module>rainbow-bridge-gateway</module>
         <module>rainbow-bridge-register</module>
+        <module>rainbow-bridge-oauth2</module>
     </modules>
 
     <dependencies>
@@ -140,6 +143,16 @@
                         <groupId>org.springframework.boot</groupId>
                     </exclusion>
                 </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus-boot-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-generator</artifactId>
+                <version>${mybatis-plus-generator.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
