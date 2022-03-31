@@ -12,7 +12,7 @@
     <description>彩虹桥</description>
 
     <properties>
-        <spring-boot.version>2.1.9.RELEASE</spring-boot.version>
+        <spring-boot.version>2.5.12</spring-boot.version>
         <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
         <spring-cloud-alibaba.version>2.1.0.RELEASE</spring-cloud-alibaba.version>
         <spring-platform.version>Cairo-SR8</spring-platform.version>
